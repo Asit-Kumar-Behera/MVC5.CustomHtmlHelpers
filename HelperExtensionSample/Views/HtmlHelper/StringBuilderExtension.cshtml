@@ -10,4 +10,11 @@
 	Html.Image("/Images/visualstudio.png", "Visual Studio Image")<br />
 	Image is a extension method extending the HtmlHelper class.
 </p>
-
+<h4>Html Helper Extension Method using the TagBuilder class</h4>
+@Html.Image("/Images/visualstudio.png", "Visual Studio Image", "img-thumbnail img-responsive", "visualstudio", new { data_info = "Image of Visual studio" })
+<p>
+	This is a Html Helper method created using the TagBuilder class<br />
+	Html.Image(this HtmlHelper htmlHelper, string src, string altText, string cssClass, string name, object htmlAttributes = null)<br />
+	Html.Image("/Images/visualstudio.png", "Visual Studio Image", "img-thumbnail img-responsive", "visualstudio", new { data_info = "Image of Visual studio IDE" })<br />
+	Image is a extension method extending the HtmlHelper class.
+</p>
