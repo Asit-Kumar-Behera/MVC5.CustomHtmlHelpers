@@ -24,8 +24,44 @@ namespace AKB.MVC5.HtmlHelperExtensions.MVC5.HelperExtensions.Componets.Helper.S
 
             return MvcHtmlString.Create(sb.ToString());
         }
+
+        //Creating differnt overloads of the image to supports all possible scenario of the Image tag of the Html
+
         /// <summary>
-        /// 
+        /// Image Html helper using TagBuilder 
+        /// </summary>
+        /// <param name="htmlHelper">The helper</param>
+        /// <param name="src">The source of the picture to display</param>
+        /// <param name="altText">The alternate text to display</param>
+        /// <param name="htmlAttributes">An object that sets the HTML attributes for the element (optional)
+        /// to use we have to pass _ which it will convert to - ex(data_info to data-info in the view)</param>
+        /// <returns>A HTML img element with the appropriate properties set</returns>
+        public static MvcHtmlString Image(this HtmlHelper htmlHelper,string src,string altText,object htmlAttributes=null)
+        {
+            //calling the Image extension method which accepts all the parameter supported by the image tag
+            //passing string.empty to all the parameters which is not supplied to call the overload method. 
+            return Image(htmlHelper, src, altText, string.Empty, string.Empty, htmlAttributes);
+        }
+
+        /// <summary>
+        /// Image Html helper using TagBuilder 
+        /// </summary>
+        /// <param name="htmlHelper">The helper</param>
+        /// <param name="src">The source of the picture to display</param>
+        /// <param name="altText">The alternate text to display</param>
+        /// <param name="cssClass">capture the css classes and add to the image element</param>
+        /// <param name="htmlAttributes">An object that sets the HTML attributes for the element (optional)
+        /// to use we have to pass _ which it will convert to - ex(data_info to data-info in the view)</param>
+        /// <returns>A HTML img element with the appropriate properties set</returns>
+        public static MvcHtmlString Image(this HtmlHelper htmlHelper,string src,string altText,string cssClass,object htmlAttributes=null)
+        {
+            //calling the Image extension method which accepts all the parameter supported by the image tag
+            //passing string.empty to all the parameters which is not supplied to call the overload method. 
+            return Image(htmlHelper, src, altText, cssClass, string.Empty, htmlAttributes);
+        }
+
+        /// <summary>
+        /// Image Html Helper using TagBuilder
         /// </summary>
         /// <param name="htmlHelper">The helper</param>
         /// <param name="src">The source of the picture to display</param>
