@@ -13,5 +13,10 @@ namespace HelperExtensionSample.Controllers
         {
             return View();
         }
+
+        public ActionResult BootstrapButtons()
+        {
+            return View();
+        }
     }
 }

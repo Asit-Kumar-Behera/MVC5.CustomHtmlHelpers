@@ -237,6 +237,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\HtmlHelper\StringBuilderExtension.cshtml" />
+    <Content Include="Views\HtmlHelper\BootstrapButtons.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -69,7 +69,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MVC5.HelperExtensions.Componets\Helper.StringBuilderr.Extension\BootstrapButtonHelper.cs" />
     <Compile Include="MVC5.HelperExtensions.Componets\Helper.StringBuilderr.Extension\StringBuilderImageHtmlHelper.cs" />
+    <Compile Include="MVC5.HelperExtensions.Componets\MVC5.Components.Common\HtmlHelperExtensionsCommon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
