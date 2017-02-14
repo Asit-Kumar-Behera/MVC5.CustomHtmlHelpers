@@ -175,6 +175,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -238,6 +239,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\HtmlHelper\StringBuilderExtension.cshtml" />
     <Content Include="Views\HtmlHelper\BootstrapButtons.cshtml" />
+    <Content Include="Views\HtmlHelper\BootstrapTextBoxFor.cshtml" />
+    <Content Include="Views\HtmlHelper\CreateEmployee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

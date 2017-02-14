@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelperExtensionSample.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,6 +18,22 @@ namespace HelperExtensionSample.Controllers
         public ActionResult BootstrapButtons()
         {
             return View();
+        }
+
+        public ActionResult BootstrapTextBoxFor()
+        {
+            return View();
+        }
+
+        public ActionResult CreateEmployee()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult SaveEmployee(Employee employee)
+        {
+            return View("StringBuilderExtension");
         }
     }
 }
