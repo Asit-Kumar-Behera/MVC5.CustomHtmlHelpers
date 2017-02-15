@@ -15,6 +15,24 @@ namespace AKB.MVC5.HtmlHelperExtensions.MVC5.HelperExtensions.Componets.MVC5.Com
             button,
             reset
         }
+
+        public enum Html5InputTypes
+        {
+            text,
+            password,
+            color,
+            date,
+            datetime,
+            email,
+            month,
+            number,
+            range,
+            search,
+            tel,
+            time,
+            url,
+            week
+        }
         public static void AddName(TagBuilder tb, string name, string id)
         {
             //Check for name is present
