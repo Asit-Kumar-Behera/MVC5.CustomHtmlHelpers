@@ -35,10 +35,24 @@
 		<div class="form-group">
 			@Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "control-label col-md-2" })
 			<div class="col-md-10">
-				@Html.BootstrapTextBoxFor(model => model.Gender, HtmlHelperExtensionsCommon.Html5InputTypes.number,"Gender","Gender",true,false)
+				@Html.BootstrapTextBoxFor(model => model.Gender, HtmlHelperExtensionsCommon.Html5InputTypes.text,"Gender","Gender",true,false)
 				@Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
 			</div>
 		</div>
+		<div class="form-group">
+			@Html.BootstrapCheckBoxFor(model=>model.IsApplied,"Is Applied","Is Employee Applied",false,true)
+		@*</div>
+		<div class="form-group">*@
+			@Html.BootstrapCheckBoxFor(model => model.IsApproved, "Is Approved","Is Employee Approved",false,true)
+		</div>
+
+		@*<div class="form-group">
+			@Html.RadioButtonFor(model => model.IsApplied, "Is Applied")
+			</div>
+			<div class="form-group">
+			@Html.RadioButtonFor(model => model.IsApproved, "Is Approved")
+		</div>*@
+
 
 		<div class="form-group">
 			<div class="col-md-offset-2 col-md-10">
